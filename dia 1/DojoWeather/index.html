@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/styles.css" type="text/css">
+    <title>DojoWeather</title>
+</head>
+
+<body>
+    <div class="container">
+        <nav>
+            <h1>DojoWeather</h1>
+            <ul class="ciudades">
+                <li onclick="changeCity(this)">Chicago</li>
+                <li onclick="changeCity(this)">Dallas</li>
+                <li onclick="changeCity(this)">Burbank</li>
+            </ul>
+        </nav>
+    </div>
+
+    <main>
+        <div class="ciudadAcutal">
+            <h2>San jose</h2>
+            <div>
+                <span>show temperature in:</span>
+                <select onchange="cambiarMetrica(this)">
+                    <option value="celcius"> *C </option>
+                    <option value="farenheit"> *F </option>
+                </select>
+            </div>
+        </div>
+        <div class="clima">
+            <div class="dia">
+                <h3>today</h3>
+                <img src="/imagenes/some_rain.png" alt="lluvia">
+                <div class="descripcion">
+                    algo de lluvia
+                </div>
+                <div class="temperatura">
+                    <div>
+                        <span class="max">24</span>*
+                    </div>
+                    <div>
+                        <span class="min">16</span>*
+                    </div>
+                </div>
+        </div>
+            <div class="dia">
+                <h3>jueves</h3>
+                <img src="imagenes/some_sun.png" alt="sol">
+                <div class="descripcion">
+                    habra sol
+                </div>
+                <div class="temperatura">
+                    <div>
+                        <span class="max">35</span>*
+                    </div>
+                    <div>
+                        <span class="min">29</span>*
+                    </div>
+                </div>
+            </div>
+            <div class="dia">
+                <h3>viernes</h3>
+                <img src="/imagenes/some_clouds.png" alt="nube">
+                <div class="descripcion">
+                    nublado
+                </div>
+                <div class="temperatura">
+                    <div>
+                        <span class="max">20</span>*
+                    </div>
+                    <div>
+                        <span class="min">10</span>*
+                    </div>
+                </div>
+            </div>
+            <div class="dia">
+                <h3>Sabado</h3>
+                <img src="/imagenes/some_sun.png" alt="sol">
+                <div class="descripcion">
+                    habra sol
+                </div>
+                <div class="temperatura">
+                    <div>
+                        <span class="max">24</span>*
+                    </div>
+                    <div>
+                        <span class="min">16</span>*
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="cookies">
+        <img src="/imagenes/cookie.png" alt="cookie">
+        <div>
+        <h3>Stop! Cookie Time</h3>
+        <p>usamos cookies por que nos interesa la privacidad.
+            no es que le vendamos los datos a bill gates :o
+            lee mas de la legalidad <a>lee mas...</a>
+        </p>
+        </div>
+        <button onclick="aceptarCookies(this)">Aceptar</button>
+        </div>
+        <script src="./js/index.js"></script>
+    </body>
+
+</html>
